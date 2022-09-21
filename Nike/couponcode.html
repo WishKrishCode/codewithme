@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupon_Code</title>
+    <link rel="stylesheet" href="couponcode.css">
+
+</head>
+<body style="background-image: url('images/nikestore.jpg');">
+    
+
+    <div class="container">
+        <div class="coupon">
+            <img src="images/nikelogo2.jpg" class="logo">
+            <h2>50% flat off on all Shoes Within the city using Axis Bank Credit Card</h2>
+
+            <div class="coupon-row">
+                <span id="cpncode">NIKE260799</span>
+                <span id="cpncopy">COPY CODE</span>
+            </div>
+
+
+
+            <p>Valid Till: 20 Dec, 2022</p>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+
+        </div>
+    </div>
+      <script>
+        var cpncopy =  document.getElementById("cpncopy");
+var cpncode = document.getElementById("cpncode");
+
+cpncopy.onclick = function(){
+    navigator.clipboard.writeText(cpncode.innerHTML);
+    cpncopy.innerHTML = "COPPIED";
+    setTimeout(function(){
+
+        cpncopy.innerHTML = "COPY CODE";
+    }, 3000);
+}
+      </script>
+</body>
+</html>

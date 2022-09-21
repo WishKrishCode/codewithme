@@ -1,0 +1,63 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-size: cover;
+    
+    
+    
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.coupon{
+    background: linear-gradient(135deg, rgb(124, 221, 119), rgb(148, 157, 238), rgb(236, 183, 147), rgb(223, 134, 204),
+                 rgb(238, 139, 139),rgb(126, 248, 238));
+    color: white;
+    text-align: center;
+    padding: 40px 80px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 0.15);
+}
+.logo{
+    width: 80px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.coupon h2{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 50px;
+}
+.coupon p{
+    font-size: 20px;
+}
+
+.coupon-row{
+    display: flex;
+    align-items: center;
+    margin:  25px auto;
+    width: fit-content;
+}
+#cpncode{
+    border:  1px dashed white; 
+    padding: 10px 20px;
+    border-right: 0;
+}
+#cpncopy{
+    border: 1px solid white;
+    background: white;
+    padding: 10px 20px;
+    color: purple;
+    cursor: pointer;
+}
+
+
+
